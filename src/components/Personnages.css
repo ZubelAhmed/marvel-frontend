@@ -1,0 +1,140 @@
+/* Personnages.css */
+
+.personnages {
+  padding: 20px;
+}
+
+.search-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.characters-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.character-card {
+  position: relative;
+
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.character-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.character-card img {
+  width: 100%;
+  height: auto;
+}
+
+.character-card h2 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.character-card p {
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.error-message,
+.no-characters-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff0000;
+  margin: 20px;
+}
+.favorite-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-icon {
+  width: 24px;
+  height: 24px;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.favorite-button.favorited .favorite-icon {
+  color: red;
+}
+
+.search-form {
+  margin: 16px 0;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+  flex: 1;
+}
+
+.search-button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  align-self: center;
+}

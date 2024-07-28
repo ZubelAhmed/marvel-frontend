@@ -1,0 +1,50 @@
+/* CharacterComics.css */
+
+.comics-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.comic-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.comic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.comic-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.comic-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.comic-card p {
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.error-message,
+.no-comics-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff0000;
+  margin: 20px;
+}

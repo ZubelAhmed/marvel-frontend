@@ -1,0 +1,58 @@
+/* Favoris.css */
+
+.favoris {
+  padding: 16px;
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.favorite-card {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 16px;
+  padding: 16px;
+  background-color: #fff;
+  width: 200px; /* Adjust width as needed */
+}
+
+.favorite-card img {
+  width: 100%;
+  height: auto;
+}
+
+.favorite-card h3 {
+  margin: 8px 0;
+}
+
+.favorite-card p {
+  margin: 0;
+}
+
+.remove-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-icon {
+  width: 24px;
+  height: 24px;
+  color: #e25555;
+}
+
+.remove-button:hover .remove-icon {
+  color: #b02a2a;
+}
